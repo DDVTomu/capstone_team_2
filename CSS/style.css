@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Instructors */
+#instructors {
+    padding: 5rem 0;
+}
+
+.title {
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.title h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.title h3 span {
+    color: #ff6e65;
+}
+
+.title::before,
+.title::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    display: block;
+    background: #707070;
+    position: absolute;
+}
+
+.title::before {
+    top: 3rem;
+    left: 33rem;
+}
+
+.title::after {
+    bottom: 2rem;
+    left: 34rem;
+}
+
+#instructors .row {
+    margin-right: -15px;
+}
+
+.card {
+    box-shadow: 0 0 40px 0 #00000014;
+    border: none;
+    padding: 10px 10px 0 10px;
+}
+
+.card .card-img-top {
+
+    border-radius: 15px 15px 0 0;
+}
+
+.card .card-text {
+    color: gray;
+}
+
+.head {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+}
+
+.card .overplay {
+    text-align: center;
+    padding: 20px;
+    background-color: #0808084a;
+    position: absolute;
+    width: 100%;
+    bottom: -60px;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.card .overplay i {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    background-color: white;
+
+}
+
+.card:hover .overplay {
+    opacity: 1;
+    transform: translateY(-60px);
+
+}
+
+.card:hover h4 {
+    color: #ff6e65;
+}
+
+/* Contact */
+#contact {
+    padding-bottom: 3rem;
+}
+
+.title__contact h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.title__contact p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    margin: 50px 0;
+}
+
+.title__contact button {
+    border: none;
+    background-color: #ff6e65;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.title__contact button:hover {
+    background-color: #0d369f;
+
+}
+
+/* Footer  */
+footer {
+    background-color: #060e1f;
+    margin-top: 10rem;
+
+}
+
+.footer__content {
+    position: relative;
+
+
+}
+
+.footer__top {
+    background-color: white;
+    padding: 50px;
+    margin: auto 5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0 #15161714;   
+    position: absolute;
+    left: 0;
+    top: -115px;
+}
+
+.footer__top .left h4 {
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.mid__content {
+    color: white;
+}
+
+.mid__content h5 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #17365866;
+}
+
+.mid__content ul {
+    padding: 0px;
+    list-style: none;
+}
+
+.mid__content a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact {
+    border-right: 1px solid #17365866;
+}
+
+.contact li {
+    margin-bottom: 20px;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+.footer__mid{
+    padding: 12rem 0 5rem;
+}
+.footer__content a{
+    color: #cecece;
+}
+.archives li, .categories li{
+    margin-bottom: 10px;
+
+}
+.archives i, .categories i{
+    font-size: 10px;
+}
+.about{
+    padding: 0 40px;
+}
+.about p{
+    color: #cecece;
+}
+.about i, .in{
+    background-color: #ffffff0f;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;  
+}
+.about .in{
+    display: inline-block;
+    font-weight: 1000;
+}
+
+.footer__bottom {
+    padding: 20px 0;
+    background-color: #040a17;
+}
+
+.footer__bottom p {
+    margin: 0;
+    text-align: center;
+    color: #a0a0a0;
+}
+
+.footer__bottom p a {
+    color: #fff;
+}
+.footer__top .right input{
+    width: 70%;
+    height: 60px;
+    border: 1px solid #0000001f;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+}
+.footer__top .right button{
+    width: 20%;
+    border: none;
+    color: white;
+    background-color: #0d369f;
+    border-radius: 0 10px 10px 0;
+}
+.footer__top .right button:hover{
+    opacity: 0.9;
+}
+/* BackToTop */
+.backtotop {
+    background-color: #0d369f;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.backtotop:hover{
+    opacity: 0.9;
+}
+
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out {
+    opacity: .5;
+}
