@@ -32,18 +32,12 @@
   color: #fff;
   font-size: 15px;
   font-weight: 500;
-  transition: all 0.3s;
 }
 
 @media only screen and (max-width: 991px) {
   .studious-top-header {
     display: none;
   }
-}
-
-.studious-top-header .top-headers li a:hover {
-  color: #ff6e65;
-  text-decoration: none;
 }
 
 .studious-header {
@@ -66,6 +60,8 @@
   z-index: 999 !important;
   background-color: #fff;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  display: grid;
+  align-items: center;
   height: 70px;
 }
 .studious-header .container-fluid .row {
@@ -73,6 +69,12 @@
 }
 
 .studious-header .navbar {
+  padding: 1.2rem 1rem;
+  transition: all 0.4s ease 0s;
+  justify-content: space-between;
+}
+
+.studious-header .navbar-brand {
   padding: 0;
 }
 
@@ -99,14 +101,25 @@
 .studious-header .main-menu ul {
   list-style: none;
   margin-bottom: 0;
+  background-color: #fff;
 }
 
 .studious-header .main-menu ul li {
   padding: 0 12px;
-  font-size: 16px;
+}
+
+.studious-header .main-menu ul li a {
   color: #060606;
+  padding: 6px 0 !important;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.studious-header .main-menu ul li a.active,
+.studious-header .main-menu ul li a:hover {
+  color: #ff6e65;
 }
 
 .studious-header .main-menu .form-group {
@@ -134,10 +147,27 @@
   border-radius: 30px;
 }
 .studious-header .main-menu .search-right .search-btn {
-  right: 0;
-  top: 0;
+  right: 0px;
+  top: 0px;
   color: #0d369f;
 }
+
+@media only screen and (max-width: 991px) {
+  .studious-header .main-menu .search-right {
+    margin: 16px 0 0 0;
+
+    background: #fff;
+  }
+  .studious-header .main-menu .search-right .search-btn {
+    right: 20px;
+    top: 20px;
+  }
+
+  .studious-header .main-menu {
+    padding: 0.5rem 0rem;
+  }
+}
+
 .studious-header .nav-menu .nav-link {
   color: #060606;
   padding: 6px 0;
@@ -166,8 +196,7 @@
 
 @media only screen and (max-width: 991px) {
   .studious-header .navbar {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 
   .studious-header,
@@ -212,6 +241,8 @@
 
 .carousel-item {
   height: 90vh;
+  background-size: cover;
+  background-position: right;
 }
 
 .carousel-item .overlay {
@@ -238,19 +269,31 @@
 }
 
 .carousel-item .carousel-caption {
-  max-width: 600px;
   transform: translateY(-50%);
   text-align: left;
-  right: unset;
-  left: 140.5px;
-  bottom: -40px;
+}
+
+@media only screen and (max-width: 991px) {
+  .carousel-item .carousel-caption {
+    left: 0;
+    right: 0;
+    top: 300px;
+  }
 }
 
 .carousel-item .carousel-caption h5 {
+  max-width: 600px;
   font-size: 70px;
   line-height: 80px;
   font-weight: bold;
   color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+  .carousel-item .carousel-caption h5 {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 .carousel-item .carousel-caption p {
@@ -271,7 +314,7 @@
 .carousel-indicators {
   position: absolute;
   right: 30px;
-  top: 200px;
+  bottom: 120px;
   left: unset;
   z-index: 15;
   padding-left: 0;
@@ -279,6 +322,13 @@
   list-style: none;
   flex-direction: column;
 }
+
+@media only screen and (max-width: 991px) {
+  .carousel-indicators {
+    bottom: 120px;
+  }
+}
+
 .carousel-indicators li {
   width: 12px;
   height: 12px;
@@ -334,4 +384,9 @@
   color: #fff;
   font-weight: 600;
   font-size: 24px;
+}
+
+.studious-grids .area-box h4 a.title-head:hover {
+  color: #000;
+  text-decoration: none;
 }
