@@ -23,41 +23,205 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <header class="studious-header">
+    <section class="studious-top-header">
+      <div class="container-fluid TopHeader">
+        <div
+          class="top-content-w3ls d-flex align-items-center justify-content-between"
+        >
+          <div class="top-headers HeaderLeftInfo">
+            <ul>
+              <li>
+                <a href="contact" class="d-sm-block d-none"
+                  >Have any question ?</a
+                >
+              </li>
+
+              <li>
+                <i class="fa fa-phone"></i
+                ><a href="tel:+1(21) 234 4567">+1(21) 234 4567</a>
+              </li>
+
+              <li>
+                <i class="fa fa-envelope"></i
+                ><a href="mailto:mail@example.com">mail@example.com</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="top-headers top-headers-2 SocialIcons">
+            <ul>
+              <li>
+                <a href="https://facebook.com/w3layouts"
+                  ><i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://twitter.com/w3layouts"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="https://instagram.com/w3layouts"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+
+              <li class="mr-0">
+                <a href="https://Linkedin.com/w3layouts"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <header class="studious-header fixed" id="sticky-header">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg stroke">
-          <div class="col-xl-2">
-            <a class="header_logo d-flex align-items-center">
+          <div class="header_logo">
+            <a class="navbar-brand d-flex align-items-center">
               <img src="./assets/images/logo.png" />
               <span> studious </span>
             </a>
           </div>
-          <div
-            class="col-xl-10 main-menu d-flex justify-content-end align-items-center"
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
           >
-            <ul class="d-flex align-items-center">
-              <li>Home</li>
-              <li>About us</li>
-              <li>Pages</li>
-              <li>Contact</li>
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div
+            class="col-xl-10 main-menu justify-content-end align-items-center collapse navbar-collapse"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
-            <div class="form-group">
+            <div class="navbar-nav form-group search-right position-relative">
               <input
                 type="text"
                 class="form-control"
                 name=""
                 id=""
                 aria-describedby="helpId"
-                placeholder=""
+                placeholder="Enter Keyword"
               />
+              <button type="submit" class="btn search-btn position-absolute">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
             </div>
           </div>
         </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay"></div>
+            <div class="carousel-caption container">
+              <h5 class="animate__animated animate__fadeInUp animate__delay-1s">
+                Master the Skills to Drive your Career
+              </h5>
+              <a class="btn btn-style mt-sm-5 mt-4" href="about">
+                Know More
+                <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <div class="carousel-caption container">
+              <h5 class="animate__animated animate__fadeInUp animate__delay-1s">
+                Studious is the best choice for everyone
+              </h5>
+              <a class="btn btn-style mt-sm-5 mt-4" href="about">
+                Know More
+                <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <section class="studious-grids pb-lg-5 text-center" id="services">
+          <div class="container HomePageFeatures">
+            <div
+              class="grids-area-hny main-cont-wthree-fea row justify-content-center"
+            >
+              <div class="col-lg-3 col-md-6 px-lg-2">
+                <div class="area-box color-1">
+                  <i class="fa fa-cogs" aria-hidden="true"></i>
+                  <h4>
+                    <a href="#url" class="title-head"
+                      >Engineering & Architecture</a
+                    >
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 px-lg-2 mt-md-0 mt-3">
+                <div class="area-box color-2">
+                  <i class="fa fa-book" aria-hidden="true"></i>
+                  <h4>
+                    <a href="#url" class="title-head">Learning Management</a>
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3">
+                <div class="area-box color-3">
+                  <i class="fa fa-coffee" aria-hidden="true"></i>
+                  <h4>
+                    <a href="#url" class="title-head">Business & Management</a>
+                  </h4>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3">
+                <div class="area-box color-4">
+                  <i class="fa fa-hourglass-half" aria-hidden="true"></i>
+                  <h4>
+                    <a href="#url" class="title-head"
+                      >Artificial Intelligence</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -75,5 +239,12 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+      integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
   </body>
 </html>
