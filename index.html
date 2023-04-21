@@ -31,7 +31,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body id="studious-body" class="light-mode">
     <section class="studious-top-header">
       <div class="container-fluid TopHeader">
         <div
@@ -107,7 +107,7 @@
           </button>
 
           <div
-            class="col-xl-10 main-menu justify-content-end align-items-center collapse navbar-collapse"
+            class="main-menu justify-content-end align-items-center collapse navbar-collapse"
             id="collapsibleNavbar"
           >
             <ul class="navbar-nav ml-auto d-flex align-items-center">
@@ -134,6 +134,18 @@
               </button>
             </div>
           </div>
+          <nav class="navigation ld-switch">
+            <div class="theme-switch-wrapper d-flex align-items-center">
+                <label class="theme-switch" for="checkbox">
+                  <button class="btn-lightswitch" id="switch-dark">
+                    <i class="far fa-moon"></i>
+                  </button>
+                  <button class="btn-lightswitch " id="switch-light">
+                    <i class="far fa-sun"></i>
+                  </button>
+                </label>
+            </div>
+        </nav>
         </nav>
       </div>
     </header>
@@ -284,82 +296,6 @@
           </div>
         </div>
       </section>
-      <!-- <section class="studious-services py-5">
-        <div class="container py-md-5 py-4" bis_skin_checked="1">
-          <div class="services-grids" bis_skin_checked="1">
-            <div class="row services-right-grid" bis_skin_checked="1">
-              <div class="col-xl-4" bis_skin_checked="1"></div>
-
-              <div class="col-xl-8" bis_skin_checked="1">
-                <div class="row" bis_skin_checked="1">
-                  <div class="col-md-6" bis_skin_checked="1">
-                    <div
-                      class="d-flex align-items-center feature-gd"
-                      bis_skin_checked="1"
-                    >
-                      <div class="icon" bis_skin_checked="1">
-                        <i
-                          class="fa fa-american-sign-language-interpreting"
-                          aria-hidden="true"
-                        ></i>
-                      </div>
-                      <div class="icon-info" bis_skin_checked="1">
-                        <h5>Flexible Classes</h5>
-                        <p>Lorem ipsum dolor sit amet, dolor elit.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 mt-md-0 mt-4" bis_skin_checked="1">
-                    <div
-                      class="d-flex align-items-center feature-gd"
-                      bis_skin_checked="1"
-                    >
-                      <div class="icon" bis_skin_checked="1">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                      </div>
-                      <div class="icon-info" bis_skin_checked="1">
-                        <h5>Offline Mode</h5>
-                        <p>Lorem ipsum dolor sit amet, dolor elit.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 mt-4 pt-md-2" bis_skin_checked="1">
-                    <div
-                      class="d-flex align-items-center feature-gd"
-                      bis_skin_checked="1"
-                    >
-                      <div class="icon" bis_skin_checked="1">
-                        <i class="fa fa-headphones" aria-hidden="true"></i>
-                      </div>
-                      <div class="icon-info" bis_skin_checked="1">
-                        <h5>Educator Help</h5>
-                        <p>Lorem ipsum dolor sit amet, dolor elit.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6 mt-4 pt-md-2" bis_skin_checked="1">
-                    <div
-                      class="d-flex align-items-center feature-gd"
-                      bis_skin_checked="1"
-                    >
-                      <div class="icon" bis_skin_checked="1">
-                        <i class="fa fa-play-circle" aria-hidden="true"></i>
-                      </div>
-                      <div class="icon-info" bis_skin_checked="1">
-                        <h5>Online Classes</h5>
-                        <p>Lorem ipsum dolor sit amet, dolor elit.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
 
       <!-- Minh's code -->
       <!-- benefit  -->
@@ -474,7 +410,8 @@
               <div class="feedback__item">
                 <!-- <i class="fa-solid fa-quote-left"></i> -->
                 <q>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                  nihil impedit.
                 </q>
                 <div class="feedback__bottom">
                   <div class="feedback__bottom_img">
@@ -491,7 +428,8 @@
               <div class="feedback__item">
                 <!-- <i class="fa-solid fa-quote-left"></i> -->
                 <q>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                  nihil impedit.
                 </q>
                 <div class="feedback__bottom">
                   <div class="feedback__bottom_img">
@@ -508,7 +446,8 @@
               <div class="feedback__item">
                 <!-- <i class="fa-solid fa-quote-left"></i> -->
                 <q>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
+                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
+                  nihil impedit.
                 </q>
                 <div class="feedback__bottom">
                   <div class="feedback__bottom_img">
@@ -524,6 +463,277 @@
           </div>
         </div>
       </section>
+
+      <!--Hung's Code-->
+      <!-- Instructors  -->
+      <section id="instructors">
+        <div class="container">
+          <div class="title text-center mx-auto text-center mb-5 pb-sm-4">
+            <h1>
+              World Class
+              <span>Instructors</span>
+            </h1>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6">
+              <div class="card">
+                <div class="head">
+                  <a href="#">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/team1.jpg"
+                      alt="Card image"
+                    />
+                  </a>
+                  <div class="overplay">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                </div>
+
+                <div class="card-body text-center">
+                  <h4 class="card-title">Olive Yew</h4>
+                  <p class="card-text">Teaches Design</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-sm-0 mt-5">
+              <div class="card">
+                <div class="head">
+                  <a href="#">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/team2.jpg"
+                      alt="Card image"
+                    />
+                  </a>
+                  <div class="overplay">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                </div>
+
+                <div class="card-body text-center">
+                  <h4 class="card-title">Aida Joe</h4>
+                  <p class="card-text">UI/UX Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+              <div class="card">
+                <div class="head">
+                  <a href="#">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/team3.jpg"
+                      alt="Card image"
+                    />
+                  </a>
+                  <div class="overplay">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                </div>
+
+                <div class="card-body text-center">
+                  <h4 class="card-title">Teri Dac</h4>
+                  <p class="card-text">Teaches Skills</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
+              <div class="card">
+                <div class="head">
+                  <a href="#">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/team4.jpg"
+                      alt="Card image"
+                    />
+                  </a>
+                  <div class="overplay">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                  </div>
+                </div>
+
+                <div class="card-body text-center">
+                  <h4 class="card-title">Anton Bne</h4>
+                  <p class="card-text">Web Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact  -->
+      <section id="contact">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-5 mb-lg-0 mb-4 text-center">
+              <img
+                src="./assets/images/image.png"
+                alt=""
+                class="img-fluid img-responsive m-auto"
+              />
+            </div>
+            <div class="col-lg-7 title__contact">
+              <h3>
+                Not Sure Where to Begin?<br />
+                Contact Now, We will Help you
+              </h3>
+              <p>
+                Consectetur adipiscing elit. Aliquam sit amet efficitur
+                tortor.Uspendisse efficitur orci urna. In et augue ornare,
+                tempor massa in, luctus sapien.
+              </p>
+              <button>Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container footer__content">
+          <div
+            class="footer__top row align-items-center justify-content-center"
+          >
+            <div class="col-md-6 left">
+              <h4>Subscribe Us to join our Community</h4>
+              <p>Newsletter</p>
+            </div>
+            <div class="col-md-6 mt-md-0 mt-4 right">
+              <form class="row">
+                <input type="text" placeholder="Enter your email" />
+                <button>Send</button>
+              </form>
+            </div>
+          </div>
+          <div class="footer__mid row">
+            <div class="mid__content archives col-lg-2 col-sm-6">
+              <h5>QUICK LINKS</h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i></span>Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i></span>About
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i></span>Courses
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i></span>Contact
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="mid__content categories col-lg-3 col-sm-6 pl-lg-5 mt-sm-0 mt-4"
+            >
+              <h5>CATEGORIES</h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i></span>Business
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i></span>Creative
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i></span>Design
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i></span>Food
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-angle-double-right"></i>Industry
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="mid__content contact col-lg-3 col-sm-6 mt-lg-0 mt-sm-5 mt-4"
+            >
+              <h5>CONTACT</h5>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="far fa-envelope"></i>
+                    info@example.com
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-phone"></i>
+                    +44-000-888-999
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    London, 235 Terry, 10001
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              class="mid__content about col-lg-4 col-sm-6 pl-lg-5 mt-lg-0 mt-sm-5 mt-4"
+            >
+              <h5>ABOUT</h5>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab.
+              </p>
+              <div class="icon">
+                <a class="in" href="">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="in" href=""> in </a>
+                <a class="in" href="">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="in" href="">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a class="in" href="">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            <i class="far fa-copyright"></i>
+            2023 Studious. All Rights Reserved | WordPress Theme by
+            <a href="#">W3Layouts.</a>
+          </p>
+        </div>
+      </footer>
+      <!-- BackToTop  -->
+      <a href="#" class="backtotop cd-top text-replace js-cd-top"
+        ><i class="fa-solid fa-turn-up"></i
+      ></a>
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -563,7 +773,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- count up  -->
-    <script src="./count_up/jquery.countup.min.js"></script>
+    <script src="./assets/js/count_up/jquery.countup.min.js"></script>
     <script>
       $(".count__number").countUp();
     </script>
