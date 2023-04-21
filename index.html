@@ -33,6 +33,10 @@
       integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
       crossorigin="anonymous"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body id="studious-body" class="light-mode">
     <section class="studious-top-header">
@@ -165,10 +169,10 @@
           <div class="carousel-item active">
             <div class="overlay"></div>
             <div class="carousel-caption container">
-              <h5 class="animate__animated animate__fadeInUp animate__delay-1s">
+              <h5 class="wow animate__animated animate__fadeInUp animate__delay-0.2s">
                 Master the Skills to Drive your Career
               </h5>
-              <a class="btn btn-style mt-sm-5 mt-4" href="about">
+              <a class="btn btn-style mt-sm-5 mt-4 wow animate__animated animate__fadeInUp animate__delay-0.4s" href="about">
                 Know More
                 <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
               ></a>
@@ -177,10 +181,10 @@
           <div class="carousel-item">
             <div class="overlay"></div>
             <div class="carousel-caption container">
-              <h5 class="animate__animated animate__fadeInUp animate__delay-1s">
+              <h5 class="wow animate__animated animate__fadeInUp animate__delay-0.2s">
                 Studious is the best choice for everyone
               </h5>
-              <a class="btn btn-style mt-sm-5 mt-4" href="about">
+              <a class="btn btn-style mt-sm-5 mt-4 wow animate__animated animate__fadeInUp animate__delay-0.4s" href="about">
                 Know More
                 <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
               ></a>
@@ -193,7 +197,7 @@
           <div
             class="grids-area-hny main-cont-wthree-fea row justify-content-center"
           >
-            <div class="col-lg-3 col-md-6 px-lg-2">
+            <div class="feature-box col-lg-3 col-md-6 px-lg-2 wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-offset="10">
               <div class="area-box color-1">
                 <i class="fa fa-cogs" aria-hidden="true"></i>
                 <h4>
@@ -204,7 +208,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 px-lg-2 mt-md-0 mt-3">
+            <div class="feature-box col-lg-3 col-md-6 px-lg-2 mt-md-0 mt-3 wow animate__animated animate__fadeInUp animate__delay-2s"  data-wow-offset="10">
               <div class="area-box color-2">
                 <i class="fa fa-book" aria-hidden="true"></i>
                 <h4>
@@ -213,7 +217,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3">
+            <div class="feature-box col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3 wow animate__animated animate__fadeInUp animate__delay-3s"  data-wow-offset="10">
               <div class="area-box color-3">
                 <i class="fa fa-coffee" aria-hidden="true"></i>
                 <h4>
@@ -222,7 +226,7 @@
               </div>
             </div>
 
-            <div class="col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3">
+            <div class="feature-box col-lg-3 col-md-6 px-lg-2 mt-lg-0 mt-3 wow animate__animated animate__fadeInUp animate__delay-4s"  data-wow-offset="10">
               <div class="area-box color-4">
                 <i class="fa fa-hourglass-half" aria-hidden="true"></i>
                 <h4>
@@ -239,7 +243,7 @@
             class="title-heading text-center mx-auto mb-5 pb-sm-4"
             bis_skin_checked="1"
           >
-            <h3 class="title-main">Welcome to <span>Studious</span></h3>
+            <h3 class="title-main wow animate__animated animate__fadeInUp animate__delay-0.2s">Welcome to <span>Studious</span></h3>
           </div>
 
           <div
@@ -364,7 +368,7 @@
       <!-- count_number  -->
       <section id="number">
         <div class="number__content container py-md-5 py-4">
-          <div class="title">
+          <div class="title wow animate__animated animate__fadeInUp animate__delay-0.2s">
             <h1>Strength in <span>Numbers</span></h1>
             <p>
               Similique sunt in culpa qui officia deserunt mollitia animi, id
@@ -405,7 +409,7 @@
       <!-- feedback -->
       <section id="feedback">
         <div class="feedback__content container py-md-5 py-4">
-          <div class="title">
+          <div class="title wow animate__animated animate__fadeInUp animate__delay-0.2s">
             <h1>Student Community<span> Feedback</span></h1>
           </div>
           <div class="row">
@@ -471,7 +475,7 @@
       <!-- Instructors  -->
       <section id="instructors">
         <div class="container">
-          <div class="title text-center mx-auto text-center mb-5 pb-sm-4">
+          <div class="title text-center mx-auto text-center mb-5 pb-sm-4 wow animate__animated animate__fadeInUp animate__delay-0.2s">
             <h1>
               World Class
               <span>Instructors</span>
@@ -584,7 +588,7 @@
                 class="img-fluid img-responsive m-auto"
               />
             </div>
-            <div class="col-lg-7 title__contact">
+            <div class="col-lg-7 title__contact wow animate__animated animate__fadeInUp animate__delay-0.2s">
               <h3>
                 Not Sure Where to Begin?<br />
                 Contact Now, We will Help you
@@ -784,5 +788,12 @@
     <script>
       $(".count__number").countUp();
     </script>
+        <script
+        type="text/javascript"
+        src="./assets/js/WOW-master/dist/wow.min.js"
+      ></script>
+      <script>
+        new WOW().init();
+      </script>
   </body>
 </html>
